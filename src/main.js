@@ -18,8 +18,8 @@ async function mergeDatasets() {
     
     // Load both datasets
     const [response1, response2] = await Promise.all([
-      fetch('/miami_businesses.json'),
-      fetch('/miami_businesses_test.json')
+      fetch('./miami_businesses.json'),
+      fetch('./miami_businesses_test.json')
     ])
     
     const businessesMain = await response1.json()
